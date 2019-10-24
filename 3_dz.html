@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict'
+        let number1 = 10 + 10 + "10";
+        //10+10 + строка10 = 2010
+        let number2 = 10 + "10" + 10;
+        //10 +строка+10 = 101010
+        let number3 = 10 + 10 + +"10";
+        //10 + 10 +унарный плюс превратит строку 10 в число 10 и получится 30 
+        let number4 = 10 / -"";
+        //10 деление на -0 даст бесконечность - -Infinity
+        let number5 = 10 / +"2,5";
+        //10 при деление на строку даст NaN - не число
+    </script>
+</body>
+
+</html>
